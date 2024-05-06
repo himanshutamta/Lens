@@ -1,5 +1,6 @@
 "use client";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import React from "react";
 
 const Connect = () => {
@@ -26,8 +27,8 @@ const Connect = () => {
             </button>
           </div>
         </div>
-        <div className=" px-3">
-          <img src="/images/map_white.webp" alt="" />
+        <div className="relative w-[100%]  md:w-[50%]  aspect-[3/2] px-3">
+          <Image src="/images/map_white.webp" alt="" fill />
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ type dataT = {
 const Card = ({ data }: { data: dataT }) => {
   return (
     <div
+      key={data.id}
       className={`${data.color} max-w-[320px] bg-foreground-100 hover:bg-transparent h-[435px] flex flex-col items-center text-start  p-6 rounded-3xl justify-between relative`}
     >
       <div

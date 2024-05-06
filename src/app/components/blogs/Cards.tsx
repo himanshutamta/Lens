@@ -10,10 +10,11 @@ type cardT = {
   color: string;
   blurBg: string;
 };
-const Cards = ({ data }: { data: cardT }) => {
+const Cards = ({ data, indx }: { data: cardT; indx: any }) => {
   const theme = useTheme();
   return (
     <div
+      key={indx}
       className={`${data.sectionClass} ${
         theme.theme === "dark" ? "bg-aboutBg" : "bg-secondary/20"
       } relative text-start mb-5 md:mb-0  group p-5  rounded-2xl `}

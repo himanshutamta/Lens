@@ -18,8 +18,8 @@ const Blogs = () => {
       </div>
       <p className="text-5xl mb-10">Inhouse Mindscape</p>
       <div className="md:grid  md:grid-cols-2 gap-4 mb-5">
-        {BLOGSDATA.map((item) => {
-          return <Cards data={item} />;
+        {BLOGSDATA.map((item, indx) => {
+          return <Cards data={item} indx={indx} />;
         })}
       </div>
       <div className="mx-auto">

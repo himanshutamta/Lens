@@ -6,7 +6,6 @@ import { useTheme } from "next-themes";
 
 const FAQ = () => {
   const theme = useTheme();
-  console.log(theme.theme);
   return (
     <div className={`${theme.theme === "light" ? " bg-bgColor" : ""} mb-16`}>
       <div className="max-w-[1200px] mx-auto text-center">

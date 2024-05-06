@@ -57,6 +57,7 @@ const Footer = () => {
               {SITEMAP.map((tab, indx) => {
                 return (
                   <Link
+                    key={indx}
                     href={tab.link}
                     className="text-sm hover:bg-gradient-to-r from-[#0091ff] to-[#9cfeff] bg-clip-text hover:text-transparent"
                   >
