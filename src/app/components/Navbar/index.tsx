@@ -10,23 +10,28 @@ import Link from "next/link";
 import styled from "styled-components";
 import { usePathname } from "next/navigation";
 
+interface RootProps {
+  bgcolor?: string; // Define the known props
+}
+
 const Navbar = () => {
   const { theme } = useTheme();
   const [openNav, setOpenNav] = useState<boolean>(false);
-  const [checkTheme, setCheckTheme] = useState<any>("");
+  const [checkTheme, setCheckTheme] = useState<string | undefined>(undefined); // Adjust type to string | undefined
   const pathname = usePathname();
 
   function close() {
     setOpenNav(false);
   }
-
+  console.log(theme);
   useEffect(() => {
     if (theme) {
       setCheckTheme(theme);
     }
   }, [theme]);
+
   return (
-    <Root bgcolor={checkTheme} className={` fixed w-[100%] z-10 bg-white `}>
+    <Root bgcolor={checkTheme} className="fixed top-0 w-[100%] z-10">
       <div
         className={appContent({
           class: "py-3 flex justify-between items-center ",
@@ -93,11 +98,11 @@ const TABS = [
   { lable: "Blog", link: "/blogs", id: 4 },
 ];
 
-const Root = styled.div<any>`
+const Root = styled.div<RootProps>`
   background: ${(props) =>
-    props?.bgcolor === "dark" ? "hsla(0, 11%, 88%, .06)" : "white"};
+    props.bgcolor === "dark" ? "hsla(0, 11%, 88%, .06)" : "white"};
   -webkit-backdrop-filter: ${(props) =>
-    props?.bgcolor === "dark" ? "blur(80px)" : "blur(0px)"};
+    props.bgcolor === "dark" ? "blur(80px)" : "blur(0px)"};
   backdrop-filter: ${(props) =>
-    props?.bgcolor === "dark" ? "blur(80px)" : "blur(0px)"};
+    props.bgcolor === "dark" ? "blur(80px)" : "blur(0px)"};
 `;

@@ -35,9 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${raleway.variable} ${poppins.variable}`}
-      >
+      <body className={` ${raleway.variable} ${poppins.variable}`}>
         <Providers>
           <Navbar />
           {children}

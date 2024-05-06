@@ -13,7 +13,7 @@ import Link from "next/link";
 const Footer = () => {
   const theme = useTheme();
   return (
-    <div className={`${theme.theme === "light" ? " bg-bgColor" : ""} py-10`}>
+    <div className={`${theme.theme === "dark" ? "" : "bg-bgColor"} py-10`}>
       <div className={appContent()}>
         <div className="sm:flex justify-between text-center sm:text-start">
           <div className="flex flex-col justify-center items-center  sm:justify-around">
