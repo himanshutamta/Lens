@@ -19,7 +19,7 @@ const Hero = () => {
             loop
           >
             <source
-              src={`/images/hero_video.mp4`}
+              src={`https://res.cloudinary.com/detwrhe0k/video/upload/v1691730947/lenscorp-website/pexels-pressmaster-3129671-3840x2160-30fps_1_ak5nsz_d7alrn.mp4`}
               type="video/mp4"
               className=""
             />

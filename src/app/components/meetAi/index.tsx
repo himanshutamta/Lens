@@ -48,7 +48,12 @@ const MeetAi = () => {
           muted
           loop
         >
-          <source src={`/images/video.mp4`} type="video/mp4" />
+          <source
+            src={
+              "https://res.cloudinary.com/detwrhe0k/video/upload/v1691730954/lenscorp-website/product-intro_1_dmajx1_qaemeu.mp4"
+            }
+            type="video/mp4"
+          />
         </video>
       </div>
     </StyledContainer>
