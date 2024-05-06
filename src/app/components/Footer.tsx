@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
               </Link>
             )}
-            <p className="mb-5 sm:mb-0">Tomorrow's Vision, Today!</p>
+            <p className="mb-5 sm:mb-0">Tomorrow&apos;s Vision, Today!</p>
             <div className="flex gap-3 mb-9 sm:mb-0">
               <div className="cursor-pointer hover:text-plus text-3xl">
                 <FaFacebook />
