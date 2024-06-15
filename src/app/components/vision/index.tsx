@@ -45,11 +45,11 @@ const Vision = () => {
                 <p className="text-3xl font-semibold mb-7">{item.title}</p>
                 <p className="text-[#8a8a8a]">{item.para}</p>
               </div>
-              <div className="relative h-[260px]">
+              <div className="relative ">
                 <p className="relative text-bgVision  z-[1] bg-white border-4 border-[#717171] rounded-full p-2 ">
                   {item.icon}
                 </p>
-                <div className=" absolute left-[50%] top-0 right-[50%] border border-dashed w-0 border-[#717171] h-full"></div>
+                <div className="hidden h-[260px] md:block absolute left-[50%] top-0 right-[50%] border border-dashed w-0 border-[#717171] "></div>
               </div>
             </div>
           </div>

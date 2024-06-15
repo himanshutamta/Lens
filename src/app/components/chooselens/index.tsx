@@ -25,10 +25,13 @@ const ChooseLens = () => {
         academicians, we guarantee the most accurate and robust solutions in the
         market.
       </p>
-      <div className="grid grid-cols-1 j sm:grid-cols-2 max-w-[700px] mx-auto gap-2 mb-10">
+      <div className="grid grid-cols-1  sm:grid-cols-2 max-w-[700px] md:mx-auto gap-2 mb-10 mx-3">
         {SOLUTIONS.map((i, indx) => {
           return (
-            <div key={indx} className="flex gap-2 items-center justify-center">
+            <div
+              key={indx}
+              className="flex gap-2 items-center text-start justify-center  md:justify-start"
+            >
               <FaCheck />
               <p className="text-lg">{i}</p>
             </div>
@@ -72,6 +75,7 @@ const CARDDATA = [
     color:
       "hover:outline outline-1 outline-[#01c99b] hover:bg-gradient-to-b from-[#01c99b]/60 to-transparent",
     blurBg: "-top-[12%] -left-[10%] bg-[#01c99b] w-[250px] h-[200px] ",
+    delay: 1,
   },
   {
     id: 2,
@@ -81,6 +85,7 @@ const CARDDATA = [
     color:
       "hover:outline outline-1 outline-[#3FBDF1] hover:bg-gradient-to-b  from-[#3FBDF1]/60 to-transparent",
     blurBg: "-top-[12%] -right-[15%] bg-[#3FBDF1] w-[250px] h-[200px] ",
+    delay: 2,
   },
   {
     id: 3,
@@ -90,6 +95,7 @@ const CARDDATA = [
     color:
       "hover:outline outline-1 outline-[#FF605F] hover:bg-gradient-to-b  from-[#FF605F]/60 to-transparent",
     blurBg: "-bottom-[12%] left-5 bg-[#FF605F] w-[140px] h-[140px] ",
+    delay: 3,
   },
   {
     id: 4,
@@ -99,5 +105,6 @@ const CARDDATA = [
     color:
       "hover:outline outline-1 outline-[#FF9F31] hover:bg-gradient-to-b  from-[#FF9F31]/60 to-transparent",
     blurBg: "-top-[15%] -right-[50%] bg-[#FF9F31] w-[250px] h-[250px] ",
+    delay: 4,
   },
 ];

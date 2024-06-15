@@ -32,7 +32,7 @@ const Services = () => {
                 <span className="relative flex  items-center">
                   {item.id}
                   <span
-                    className={`before:block before:absolute ${item.text} font-semibold text-[32px] leading-[40px] top-30 before:top-10 before:bottom-0 -left-10`}
+                    className={`before:block before:absolute ${item.text} -ml-6 font-semibold group-hover:ml-0 duration-200  text-[32px] leading-[40px]  before:top-10 before:bottom-0 -left-10`}
                   >
                     {item.title}
                   </span>

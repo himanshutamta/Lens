@@ -17,7 +17,7 @@ interface RootProps {
 const Navbar = () => {
   const { theme } = useTheme();
   const [openNav, setOpenNav] = useState<boolean>(false);
-  const [checkTheme, setCheckTheme] = useState<string | undefined>(undefined); // Adjust type to string | undefined
+  const [checkTheme, setCheckTheme] = useState<string | undefined>(undefined);
   const pathname = usePathname();
 
   function close() {
@@ -100,7 +100,7 @@ const TABS = [
 
 const Root = styled.div<RootProps>`
   background: ${(props) =>
-    props.bgcolor === "dark" ? "hsla(0, 11%, 88%, .06)" : "white"};
+    props.bgcolor === "light" ? "white" : "hsla(0, 11%, 88%, .06)"};
   -webkit-backdrop-filter: ${(props) =>
     props.bgcolor === "dark" ? "blur(80px)" : "blur(0px)"};
   backdrop-filter: ${(props) =>

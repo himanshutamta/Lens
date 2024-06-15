@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="mb-7 ">
             <div className="tracking-wider mb-7 text-lg font-medium">
               SITEMAP
             </div>

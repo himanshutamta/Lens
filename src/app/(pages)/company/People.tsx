@@ -16,7 +16,7 @@ const People = () => {
         ></div>
       </div>
       <p className="text-5xl text-[#fff] mb-16">Meet Our Researchers</p>
-      <div className="grid grid-cols-3 gap-10 max-w-[1100px] mx-auto">
+      <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-10 max-w-[1100px] lg:mx-auto mx-3">
         {COMPANYMEMBER.map((i) => {
           return (
             <div key={i.id} className="group">
@@ -31,8 +31,10 @@ const People = () => {
                     />
                   </div>
                 </div>
-                <div className="bg-[#fff] rounded-xl py-4 group-hover:-translate-y-5 duration-300 transition-all">
-                  <p className="text-2xl font-semibold mb-3 text-primary">{i.name}</p>
+                <div className="bg-[#fff] rounded-xl py-4 group-hover:-translate-y-5 duration-300 transition-all ">
+                  <p className="text-2xl font-semibold mb-3 text-primary">
+                    {i.name}
+                  </p>
                   <p className="text-[#717171] mb-2">{i.title}</p>
                 </div>
               </div>
